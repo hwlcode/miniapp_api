@@ -20,11 +20,13 @@ require('./schema/deals');
 require('./schema/web_config');
 require('./schema/menu_config');
 require('./schema/roles');
+require('./schema/admin_user');
 
 export const FilesModel = mongoose.model('Files');
 export const DealsModel = mongoose.model('Deals');
 export const WebConfigModel = mongoose.model('WebConfig');
 export const MenuConfigModel = mongoose.model('MenuConfig');
 export const RoleModel = mongoose.model('Roles');
+export const AdminUsersModel = mongoose.model('AdminUsers');
 
 

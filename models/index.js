@@ -20,9 +20,11 @@ require('./schema/deals');
 require('./schema/web_config');
 require('./schema/menu_config');
 require('./schema/roles');
+require('./schema/admin_user');
 exports.FilesModel = mongoose.model('Files');
 exports.DealsModel = mongoose.model('Deals');
 exports.WebConfigModel = mongoose.model('WebConfig');
 exports.MenuConfigModel = mongoose.model('MenuConfig');
 exports.RoleModel = mongoose.model('Roles');
+exports.AdminUsersModel = mongoose.model('AdminUsers');
 //# sourceMappingURL=index.js.map
