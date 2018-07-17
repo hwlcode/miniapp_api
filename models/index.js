@@ -9,7 +9,7 @@ else {
     db = 'mongodb://127.0.0.1:27017/minappdeals';
 }
 mongoose.Promise = global.Promise;
-mongoose.connect(db, function (err) {
+mongoose.connect(db, { useNewUrlParser: true }, function (err) {
     if (err) {
         console.log('connect to %s error: ', db, err.message);
         process.exit(1);
@@ -17,6 +17,12 @@ mongoose.connect(db, function (err) {
 });
 require('./schema/file');
 require('./schema/deals');
+require('./schema/web_config');
+require('./schema/menu_config');
+require('./schema/roles');
 exports.FilesModel = mongoose.model('Files');
 exports.DealsModel = mongoose.model('Deals');
+exports.WebConfigModel = mongoose.model('WebConfig');
+exports.MenuConfigModel = mongoose.model('MenuConfig');
+exports.RoleModel = mongoose.model('Roles');
 //# sourceMappingURL=index.js.map
