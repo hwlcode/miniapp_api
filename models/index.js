@@ -21,10 +21,12 @@ require('./schema/web_config');
 require('./schema/menu_config');
 require('./schema/roles');
 require('./schema/admin_user');
+require('./schema/email_service');
 exports.FilesModel = mongoose.model('Files');
 exports.DealsModel = mongoose.model('Deals');
 exports.WebConfigModel = mongoose.model('WebConfig');
 exports.MenuConfigModel = mongoose.model('MenuConfig');
 exports.RoleModel = mongoose.model('Roles');
 exports.AdminUsersModel = mongoose.model('AdminUsers');
+exports.EmailServiceModel = mongoose.model('EmailService');
 //# sourceMappingURL=index.js.map

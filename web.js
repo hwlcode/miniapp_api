@@ -4,6 +4,7 @@ var deals_1 = require("./admin/deals");
 var web_config_api_1 = require("./admin/web_config_api");
 var roles_1 = require("./admin/roles");
 var admin_user_1 = require("./admin/admin_user");
+var email_service_1 = require("./admin/email_service");
 function webApi(app) {
     // 秒杀产品
     deals_1.dealsApi(app);
@@ -13,6 +14,8 @@ function webApi(app) {
     roles_1.rolesApi(app);
     // 后台用户
     admin_user_1.adminUsersApi(app);
+    // 邮件服务
+    email_service_1.emailServiceApi(app);
 }
 exports.webApi = webApi;
 //# sourceMappingURL=web.js.map
